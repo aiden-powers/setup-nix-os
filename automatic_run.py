@@ -1,7 +1,7 @@
 import pydirectinput
 import time
-pydirectinput.PAUSE = 0.005
-time.sleep(3)
+pydirectinput.PAUSE = 0.01
+time.sleep(2)
 
 uppercase_map = {
     "a": "A",
@@ -70,3 +70,5 @@ def stringmanager(string):
             pydirectinput.press(char)
 
 stringmanager('sudo curl -L https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/setup.sh | bash')
+pydirectinput.keyDown('enter')
+pydirectinput.keyUp('enter')
