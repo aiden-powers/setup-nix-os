@@ -2,13 +2,13 @@
 readme.md core
 
 VMware Setup (For installation):
-- 2 CPUs, 1 Core per
+- 8 CPUs, 2 Cores per
 - 64GB Drive
 - 8GB RAM
 
 Nix Settings:
-- 8GB Partition (Im only installing to 8GB of the 64GB drive, for dynamic vm drive purposes)
-- 8GB Swap, enabled before installation
+- 32GB Partition (Im only installing to 8GB of the 64GB drive, for dynamic vm drive purposes)
+- 4GB Swap, enabled before installation
 
 # VMware workstation pro doesnt allow emulated input
 okay
