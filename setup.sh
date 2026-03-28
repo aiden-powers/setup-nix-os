@@ -15,4 +15,5 @@ sudo mkswap -L swap /dev/sda2
 sudo mount /dev/disk/by-label/nixos /mnt
 sudo swapon /dev/sda2
 
-sudo curl -o /mnt/etc/nixos/configuration.nix \ https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/configuration.nix
+sudo curl -O https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/configuration.nix
+sudo mv configuration.nix /mnt/etc/nixos/configuration.nix
