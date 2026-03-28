@@ -69,7 +69,7 @@ def stringmanager(string):
         else:
             pydirectinput.press(char)
 
-stringmanager('sudo curl -L https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/setup.sh | bash')
+#stringmanager('sudo curl -L https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/setup.sh | bash')
 #stringmanager('sudo curl -L https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/config-debug.sh | bash')
 #stringmanager('sudo nano /etc/nixos/configuration.nix')
 pydirectinput.keyDown('enter')
