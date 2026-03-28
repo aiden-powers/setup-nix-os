@@ -19,11 +19,11 @@ sudo mv configuration.nix /mnt/etc/nixos/configuration.nix
 #sudo mount /dev/disk/by-label/nixos /mnt
 #sudo swapon /dev/sda2
 
-parted /dev/sda -- mklabel msdos
-parted /dev/sda -- mkpart primary 1MB -8GB
-parted /dev/sda -- set 1 boot on
-parted /dev/sda -- mkpart primary linux-swap -8GB 100%
-mkfs.ext4 -L nixos /dev/sda1
-mkswap -L swap /dev/sda2
-mount /dev/disk/by-label/nixos /mnt
-swapon /dev/sda2
+sudo parted /dev/sda -- mklabel msdos
+sudo parted /dev/sda -- mkpart primary 1MB -8GB
+sudo parted /dev/sda -- set 1 boot on
+sudo parted /dev/sda -- mkpart primary linux-swap -8GB 100%
+sudo mkfs.ext4 -L nixos /dev/sda1
+sudo mkswap -L swap /dev/sda2
+sudo mount /dev/disk/by-label/nixos /mnt
+sudo swapon /dev/sda2
