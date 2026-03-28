@@ -6,7 +6,7 @@ sudo nix-channel --update
 printf "NIX_PATH: %s\n" "$NIX_PATH"
 
 sudo wipefs -a /dev/sda # Remove: 1. partition tales, 2. filesystem signatures, 3. swap signatures
-sudo dd if=/dev/zero of=/dev/sda bs=1M count=100 # overwrite 100mb of zeros at the beginning of the disk, make sure nothing is there so we can write to it
+#sudo dd if=/dev/zero of=/dev/sda bs=1M count=100 # overwrite 100mb of zeros at the beginning of the disk, make sure nothing is there so we can write to it
 sudo parted /dev/sda -- mklabel msdos
 sudo parted /dev/sda -- mkpart primary ext4 1MiB -20GB
 sudo parted /dev/sda -- mkpart primary linux-swap -4GB 100%
