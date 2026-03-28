@@ -23,7 +23,3 @@ sudo mkfs.ext4 -L nixos /dev/sda1
 sudo mkswap -L swap /dev/sda2
 sudo mount /dev/disk/by-label/nixos /mnt
 sudo swapon /dev/sda2
-
-sudo nixos-generate-config --root /mnt
-sudo curl -O https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/configuration.nix
-sudo mv configuration.nix /mnt/etc/nixos/configuration.nix
