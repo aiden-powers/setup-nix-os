@@ -6,5 +6,5 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "24.11";
 }
