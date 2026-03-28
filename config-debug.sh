@@ -1,3 +1,6 @@
+mv /nix/var/nix/db/db.sqlite /nix/var/nix/db/db.sqlite-bkp #https://nix.dev/guides/troubleshooting.html
+sqlite3 /nix/var/nix/db/db.sqlite-bkp ".dump" | sqlite3 /nix/var/nix/db/db.sqlite
+
 sudo nixos-generate-config --root /mnt
 sudo curl -O https://raw.githubusercontent.com/aiden-powers/setup-nix-os/refs/heads/main/configuration.nix
 sudo mv configuration.nix /mnt/etc/nixos/configuration.nix
